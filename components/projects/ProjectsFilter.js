@@ -1,8 +1,7 @@
 const selectOptions = [
 	'Web Application',
-	'Mobile Application',
-	'UI/UX Design',
-	'Branding',
+	'Backend Application',
+
 ];
 
 function ProjectsFilter({ setSelectProject }) {
@@ -27,7 +26,7 @@ function ProjectsFilter({ setSelectProject }) {
                 dark:text-ternary-light
             "
 		>
-			<option value={setSelectProject} className="text-sm sm:text-md">
+			<option className="text-sm sm:text-md">
 				All Projects
 			</option>
 

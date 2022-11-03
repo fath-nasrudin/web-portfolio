@@ -13,13 +13,12 @@ const ProjectSingle = (props) => {
 				delay: 0.15,
 			}}
 		>
-			<Link
-				href="/projects/[id]"
-				as={'/projects/' + props.id}
-				aria-label="Single Project"
-				passHref
+			<a
+				href={props.url}
+				target="_blank" rel="noreferrer"
 			>
 				<div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
+					{/* image */}
 					<div>
 						<Image
 							src={props.img}
@@ -30,6 +29,13 @@ const ProjectSingle = (props) => {
 							height={90}
 						/>
 					</div>
+					{/* tags */}
+					<div className="text-center px-4 pt-6 flex flex-wrap gap-2 justify-center align-top text-black dark:text-white">
+						{props.technologies.map((tech, i) => (
+							<div key={i} className='border-2 border-black rounded-lg px-2 dark:border-white'>{tech}</div>
+						)) }
+					</div>
+					{/* text */}
 					<div className="text-center px-4 py-6">
 						<p className="font-general-medium text-xl md:text-2xl text-ternary-dark dark:text-ternary-light mb-2">
 							{props.title}
@@ -39,7 +45,7 @@ const ProjectSingle = (props) => {
 						</span>
 					</div>
 				</div>
-			</Link>
+			</a>
 		</motion.div>
 	);
 };

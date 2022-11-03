@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FiSun, FiMoon, FiX, FiMenu } from 'react-icons/fi';
 import HireMeModal from '../HireMeModal';
-import logoLight from '../../public/images/logo-light.svg';
-import logoDark from '../../public/images/logo-dark.svg';
+// import logoLight from '../../public/images/logo-light.svg';
+// import logoDark from '../../public/images/logo-dark.svg';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 
 function AppHeader() {
@@ -46,9 +46,12 @@ function AppHeader() {
 			<div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center">
 				{/* Header menu links and small screen hamburger menu */}
 				<div className="flex justify-between items-center px-4 sm:px-0">
+					
+					{/* LOGO DISABLED */}
 					<div>
 						<Link href="/">
-							{activeTheme === 'dark' ? (
+							<div className='cursor-pointer font-semibold	 text-lg text-slate-900 dark:text-white'>Home</div>
+							{/* {activeTheme === 'dark' ? (
 								<Image
 									src={logoDark}
 									className="w-36 cursor-pointer"
@@ -64,7 +67,7 @@ function AppHeader() {
 									width={150}
 									height={120}
 								/>
-							)}
+							)} */}
 						</Link>
 					</div>
 
@@ -122,19 +125,20 @@ function AppHeader() {
 							About Me
 						</Link>
 					</div>
-					<div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
+					{/* CONTACT DISABLED */}
+					{/* <div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<Link href="/contact" aria-label="Contact">
 							Contact
 						</Link>
-					</div>
+					</div> */}
 					<div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
-						<button
+						{/* <button
 							onClick={showHireMeModal}
 							className="font-general-medium sm:hidden block text-left text-md bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-300 w-24"
 							aria-label="Hire Me Button"
 						>
 							Hire Me
-						</button>
+						</button> */}
 					</div>
 				</div>
 
@@ -153,17 +157,18 @@ function AppHeader() {
 						<Link href="/about">About Me</Link>
 					</div>
 
-					<div
+					{/* CONTACT DISABLED */}
+					{/* <div
 						className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="Contact"
 					>
 						<Link href="/contact">Contact</Link>
-					</div>
+					</div> */}
 				</div>
 
 				{/* Header right section buttons */}
 				<div className="hidden sm:flex justify-between items-center flex-col md:flex-row">
-					<div className="hidden md:flex">
+					{/* <div className="hidden md:flex">
 						<button
 							onClick={showHireMeModal}
 							className="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
@@ -171,7 +176,7 @@ function AppHeader() {
 						>
 							Hire Me
 						</button>
-					</div>
+					</div> */}
 
 					{/* Theme switcher large screen */}
 					<div

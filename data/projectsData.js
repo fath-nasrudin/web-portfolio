@@ -7,13 +7,113 @@ import {
 	FiYoutube,
 } from 'react-icons/fi';
 
+const 	Technologies = [
+	'REST API',
+	'Node.js',
+	'Javascript',
+	'expressjs',
+	// 'TailwindCSS',
+	'MongoDB',
+	'ReactJS',
+]
+
+const projectDataItem = {
+	id: 1,
+	title: 'Librarium Server',
+	url: 'https://github.com/fath-nasrudin/',
+	category: 'Web Application',
+	img: '/images/web-project-2.jpg',
+};
+// [https://github.com/fath-nasrudin/travelhub-server](https://github.com/fath-nasrudin/travelhub-server)
+
+// [https://github.com/fath-nasrudin/task-manager-server](https://github.com/fath-nasrudin/task-manager-server)
+
+// [https://github.com/fath-nasrudin/goal-eater](https://github.com/fath-nasrudin/goal-eater)
+
+// [https://github.com/fath-nasrudin/librarium-server](https://github.com/fath-nasrudin/librarium-server)
 export const projectsData = [
+	{
+		id: 1,
+		title: 'Librarium Server',
+		url: 'https://github.com/fath-nasrudin/librarium-serve',
+		category: 'Backend Application',
+		img: '/images/web-project-2.jpg',
+		technologies: [
+			'REST API',
+			'Node.js',
+			'Javascript',
+			'expressjs',
+			'MongoDB',
+		]
+
+	},
+	{
+		id: 2,
+		title: 'Travelhub Server',
+		url: 'https://github.com/fath-nasrudin/travelhub-server',
+		category: 'Backend Application',
+		img: '/images/web-project-2.jpg',
+		technologies: [
+			'REST API',
+			'Node.js',
+			'Javascript',
+			'expressjs',
+			'MongoDB',
+		]
+
+	},
+	{
+		id: 3,
+		title: 'Task manager Server',
+		url: 'https://github.com/fath-nasrudin/task-manager-server',
+		category: 'Backend Application',
+		img: '/images/web-project-2.jpg',
+		technologies: [
+			'REST API',
+			'Node.js',
+			'Javascript',
+			'expressjs',
+			'MongoDB',
+		]
+
+	},
+	{
+		id: 4,
+		title: 'Goal Eater Server and Client',
+		url: 'https://github.com/fath-nasrudin/goal-eater',
+		category: 'Web Application',
+		img: '/images/web-project-2.jpg',
+		technologies: [
+			'REST API',
+			'Node.js',
+			'Javascript',
+			'expressjs',
+			'MongoDB',
+			'ReactJS',
+		]
+
+	},
+]
+export const projectsData2 = [
 	{
 		id: 1,
 		title: 'Google Health Platform',
 		url: 'google-health-platform',
 		category: 'Web Application',
 		img: '/images/web-project-2.jpg',
+		Technologies: [
+			{
+				title: 'Tools & Technologies',
+				techs: [
+					'HTML',
+					'CSS',
+					'JavaScript',
+					'Vue.js',
+					'TailwindCSS',
+					'AdobeXD',
+				],
+			},
+		],
 		ProjectHeader: {
 			title: 'Google Health Platform',
 			publishDate: 'Jul 26, 2021',
@@ -63,19 +163,7 @@ export const projectsData = [
 			ObjectivesHeading: 'Objective',
 			ObjectivesDetails:
 				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
-			Technologies: [
-				{
-					title: 'Tools & Technologies',
-					techs: [
-						'HTML',
-						'CSS',
-						'JavaScript',
-						'Vue.js',
-						'TailwindCSS',
-						'AdobeXD',
-					],
-				},
-			],
+			
 			ProjectDetailsHeading: 'Challenge',
 			ProjectDetails: [
 				{
